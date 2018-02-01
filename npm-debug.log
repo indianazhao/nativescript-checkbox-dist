@@ -1,0 +1,136 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/indiana/.nvm/versions/node/v7.4.0/bin/node',
+1 verbose cli   '/Users/indiana/.nvm/versions/node/v7.4.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@4.0.5
+3 info using node@v7.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/indiana/Program/github/nativescript-checkbox/bin/dist',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/indiana/.npm/nativescript-checkbox/3.0.3/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/indiana/.npm correctMkdir not in flight; initializing
+10 info lifecycle nativescript-checkbox@3.0.3~prepublish: nativescript-checkbox@3.0.3
+11 silly lifecycle nativescript-checkbox@3.0.3~prepublish: no script for prepublish, continuing
+12 info lifecycle nativescript-checkbox@3.0.3~prepare: nativescript-checkbox@3.0.3
+13 silly lifecycle nativescript-checkbox@3.0.3~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/indiana/.npm/nativescript-checkbox/3.0.3/package.tgz',
+14 verbose tar pack   '/Users/indiana/Program/github/nativescript-checkbox/bin/dist' ]
+15 verbose tarball /Users/indiana/.npm/nativescript-checkbox/3.0.3/package.tgz
+16 verbose folder /Users/indiana/Program/github/nativescript-checkbox/bin/dist
+17 verbose addLocalTarball adding from inside cache /Users/indiana/.npm/nativescript-checkbox/3.0.3/package.tgz
+18 verbose correctMkdir /Users/indiana/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd nativescript-checkbox@3.0.3
+20 verbose afterAdd /Users/indiana/.npm/nativescript-checkbox/3.0.3/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/indiana/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/indiana/.npm/nativescript-checkbox/3.0.3/package/package.json written
+23 silly publish { name: 'nativescript-checkbox',
+23 silly publish   version: '3.0.3',
+23 silly publish   description: 'NativeScript plugin for checkbox widget.',
+23 silly publish   main: 'checkbox',
+23 silly publish   typings: 'index.d.ts',
+23 silly publish   nativescript: { platforms: { android: '3.0.1', ios: '3.0.1' } },
+23 silly publish   scripts:
+23 silly publish    { publish: 'grunt publish',
+23 silly publish      precommit: 'lint-staged',
+23 silly publish      build: 'tsc',
+23 silly publish      'copy.ios': 'cp -R checkbox.*.js demo/node_modules/nativescript-checkbox && cd demo && tns run ios --syncAllFiles',
+23 silly publish      'copy.android': 'cp -R checkbox.*.js demo/node_modules/nativescript-checkbox && cd demo && tns run android --syncAllFiles',
+23 silly publish      buildrun: 'npm run build && cp -R checkbox.*.js demo/node_modules/nativescript-checkbox',
+23 silly publish      'demo.ios': 'npm run preparedemo && cd demo && tns run ios --emulator',
+23 silly publish      'demo.ng.ios': 'npm run preparedemong && cd demo-ng && tns run ios --emulator',
+23 silly publish      'demo.android': 'npm run preparedemo && cd demo && tns run android --emulator',
+23 silly publish      'demo.ng.android': 'npm run preparedemong && cd demo-ng && tns run android --emulator',
+23 silly publish      'debug.ios': 'npm run preparedemo && cd demo && tns debug ios',
+23 silly publish      'debug.android': 'npm run preparedemo && cd demo && tns debug android',
+23 silly publish      preparedemo: 'npm run build && cd demo && tns plugin remove nativescript-checkbox && tns plugin add .. && tns install',
+23 silly publish      preparedemong: 'npm run build && cd demo-ng && tns plugin remove nativescript-checkbox && tns plugin add .. && tns install',
+23 silly publish      nuke: 'rm -rf node_modules && cd demo && rm -rf node_modules platforms hooks && cd ../demo-ng && rm -rf node_modules platforms hooks && cd ..' },
+23 silly publish   'lint-staged': { '*.ts': [ 'prettier --write', 'git add' ] },
+23 silly publish   repository:
+23 silly publish    { type: 'git',
+23 silly publish      url: 'git+https://github.com/bradmartin/nativescript-checkbox.git' },
+23 silly publish   keywords:
+23 silly publish    [ 'NativeScript',
+23 silly publish      'TypeScript',
+23 silly publish      'Android',
+23 silly publish      'iOS',
+23 silly publish      'Material Design',
+23 silly publish      'CheckBox' ],
+23 silly publish   author: { name: 'Brad Martin', email: 'bradwaynemartin@gmail.com' },
+23 silly publish   contributors:
+23 silly publish    [ { name: 'Nathan Walker',
+23 silly publish        email: 'walkerrunpdx@gmail.com',
+23 silly publish        url: 'https://github.com/NathanWalker' },
+23 silly publish      { name: 'Steve McNiven-Scott',
+23 silly publish        email: 'steve@sitefinitysteve.com',
+23 silly publish        url: 'https://github.com/sitefinitysteve' },
+23 silly publish      { name: 'Osei Fortune',
+23 silly publish        email: 'fortune.osei@yahoo.com',
+23 silly publish        url: 'https://github.com/triniwiz' },
+23 silly publish      { name: 'Eddy Verbruggen',
+23 silly publish        email: 'eddyverbruggen@gmail.com',
+23 silly publish        url: 'https://github.com/EddyVerbruggen' },
+23 silly publish      { name: 'Jeremiah Ogbomo',
+23 silly publish        email: 'jeremiahogbomo@gmail.com',
+23 silly publish        url: 'https://github.com/jogboms' },
+23 silly publish      { name: 'Manojkumar Murugesan',
+23 silly publish        url: 'https://github.com/manojdcoder' },
+23 silly publish      { url: 'https://github.com/jeremy-sweazy-cwt' },
+23 silly publish      { name: 'Schmidely Stéphane',
+23 silly publish        email: 'schmidely.stephane@outlook.com',
+23 silly publish        url: 'https://github.com/stephlm2dev' },
+23 silly publish      { name: 'August Heegaard', url: 'https://github.com/agisboye' } ],
+23 silly publish   bugs: { url: 'https://github.com/bradmartin/nativescript-checkbox/issues' },
+23 silly publish   license: 'MIT',
+23 silly publish   homepage: 'https://github.com/bradmartin/nativescript-checkbox',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   peerDependencies: { 'tns-core-modules': '^3.1.0 || >3.3.0-' },
+23 silly publish   readme: '\n[![npm](https://img.shields.io/npm/v/nativescript-checkbox.svg)](https://www.npmjs.com/package/nativescript-checkbox)\n[![npm](https://img.shields.io/npm/dt/nativescript-checkbox.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-checkbox)\n\n# NativeScript CheckBox :white_check_mark:\nA NativeScript plugin for the native checkbox widget.\n\n#### Platform controls used: \nAndroid |   iOS\n---------- | -------\n[Android CheckBox](https://developer.android.com/reference/android/widget/CheckBox.html) | [BEMCheckBox](http://cocoapods.org/pods/BEMCheckBox) \n\n\n## Sample Usage\n\nAndroid Sample |  iOS Sample\n-------- | ---------\n![Sample1](./screens/checkbox.gif) | ![Sample2](./screens/iosCheckbox.gif)\n\n## Installation\nFrom your command prompt/terminal go to your app\'s root folder and execute:\n\n#### NS 3.0+\n`tns plugin add nativescript-checkbox`\n\n#### NS < 3.0\n`tns plugin add nativescript-checkbox@1.2.8`\n\n## Usage\n\n###\n```XML\n<Page \n  xmlns="http://schemas.nativescript.org/tns.xsd" \n  xmlns:CheckBox="nativescript-checkbox" loaded="pageLoaded">\n  <ActionBar title="Native Checkbox" />\n  <StackLayout>\n    <CheckBox:CheckBox checked="{{ checkProp }}" text="{{ myCheckText }}" fillColor="{{ myCheckColor }}" id="myCheckbox" />\n    <CheckBox:CheckBox text="CheckBox Label" checked="false" />\n  </StackLayout>\n</Page>\n```\n\n### \n```TS\nimport { CheckBox } from \'nativescript-checkbox\';\nimport { topmost } from \'ui/frame\';\n\npublic toggleCheck() {\n  let checkBox = topmost().getViewById(\'yourCheckBoxId\');\n  checkBox.toggle();\n}\n\npublic getCheckProp() {\n  let checkBox = topmost().getViewById(\'yourCheckBoxId\');\n  console.log(\'checked prop value = \' + checkBox.checked);\n}\n\n```\n\n### Angular Usage Sample:\n\n```typescript\nimport { TNSCheckBoxModule } from \'nativescript-checkbox/angular\';\n\n@NgModule({\n    imports: [TNSCheckBoxModule],\n    // etc.\n})\nexport class YourModule {}\n\n// component:\nexport class SomeComponent  {\n    @ViewChild("CB1") FirstCheckBox: ElementRef;\n    constructor() {}\n    public toggleCheck() {\n        this.FirstCheckBox.nativeElement.toggle();\n    }\n\n    public getCheckProp() {\n        console.log(\'checked prop value = \' + this.FirstCheckBox.nativeElement.checked);\n    }\n}\n```\n\n```html\n<StackLayout>\n    <CheckBox #CB1 text="CheckBox Label" checked="false"></CheckBox>\n    <Button (tap)="toggleCheck()" text="Toggle it!"></Button>\n    <Button (tap)="getCheckProp()" text="Check Property"></Button>\n</StackLayout>\n```\n\n## Properties\n\n- **checked** - boolean\n- **text** - text to use with the checkbox\n- **fillColor** - Color of the checkbox element\n- **boxType** - Either \'square\' (default) or \'circle\'. It\'s recommended to use \'circle\' for radiobuttons. Note that plugin version 3.0.0 switched the default for iOS to \'square\' for alignment with Android. Still want `circle` on iOS and `square` on Android? Just make the `boxType` value conditional.\n\n## Events\n\n- **checkedChange** - Use a reference to the CheckBox component to grab it\'s `checked` property when this event fires to see the new value.\n\n## API\n\n- **toggle()** - Change the checked state of the view to the inverse of its current state.\n\n## Css Styling\n\n- **color** - set the text label color\n- **font-size** - checkbox is sized to text from here  : default 15\n- **border-width** - set the line width of the checkbox element: iOS only\n\n## Styling [Android]\n- **checkStyle** - set to the name of your drawable\n- **checkPadding** - set the padding of the checkbox\n\nAdd the following to `app/App_Resources/Android/drawable/checkbox_grey.xml`\n```xml\n<?xml version="1.0" encoding="utf-8"?>\n\n<selector xmlns:android="http://schemas.android.com/apk/res/android">\n    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/ic_checkbox_checked_incomplete" />\n    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/ic_checkbox_grey_incomplete" />\n    <item android:state_checked="true" android:drawable="@drawable/ic_checkbox_checked_grey"/>\n    <item android:state_checked="false" android:drawable="@drawable/ic_checkbox_grey" />\n</selector>\n```\n\n## Radiobuttons, anyone?\nWant to use radiobutton behavior for your checkboxes (only one option possible within a group)?\nSet `boxType="circle"` and check out the second tab in the [Angular demo](demo-ng/), here\'s a screenshot:\n\n<img src="./screens/radiobuttons.png" width="225px"/>\n\n## Demo Setup\n* npm i\n* npm run preparedemo\n* npm run demo.ios\n\n\n#### Contributors\n\n<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->\n\n| [<img src="https://avatars0.githubusercontent.com/u/6006148?v=3" width="100px;"/><br /><sub>Brad Martin</sub>](https://bradmartin.net/) | [<img src="https://avatars2.githubusercontent.com/u/1542376?v=3" width="100px;"/><br /><sub>Steve McNiven-Scott</sub>](https://github.com/sitefinitysteve)  |  [<img src="https://avatars3.githubusercontent.com/u/6695919?v=3" width="100px;"/><br /><sub>Osei Fortune</sub>](https://github.com/triniwiz)   | [<img src="https://avatars2.githubusercontent.com/u/457187?v=3" width="100px;"/><br /><sub>Nathan Walker</sub>](https://github.com/NathanWalker)   | \n|---|---|---|---|---|\n\n<!-- ALL-CONTRIBUTORS-LIST:END -->\n',
+23 silly publish   _id: 'nativescript-checkbox@3.0.3',
+23 silly publish   _shasum: '3c2a9bb744538cf4e1581945cc89ecd635a83864',
+23 silly publish   _from: '.' }
+24 info lifecycle nativescript-checkbox@3.0.3~prepublishOnly: nativescript-checkbox@3.0.3
+25 silly lifecycle nativescript-checkbox@3.0.3~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name nativescript-checkbox
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'nativescript-checkbox',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'nativescript-checkbox',
+30 silly mapToRegistry   name: 'nativescript-checkbox',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/nativescript-checkbox
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /Users/indiana/.npm/nativescript-checkbox/3.0.3/package.tgz
+34 verbose stack Error: auth required for publishing
+34 verbose stack     at CachingRegistryClient.publish (/Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+34 verbose stack     at /Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/lib/publish.js:137:14
+34 verbose stack     at mapToRegistry (/Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+34 verbose stack     at publish_ (/Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/lib/publish.js:108:3)
+34 verbose stack     at Array.<anonymous> (/Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+34 verbose stack     at LOOP (/Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+34 verbose stack     at /Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+34 verbose stack     at done (/Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/lib/utils/lifecycle.js:132:5)
+34 verbose stack     at LOOP (/Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:7:26)
+34 verbose stack     at /Users/indiana/.nvm/versions/node/v7.4.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+35 verbose cwd /Users/indiana/Program/github/nativescript-checkbox/bin/dist
+36 error Darwin 17.3.0
+37 error argv "/Users/indiana/.nvm/versions/node/v7.4.0/bin/node" "/Users/indiana/.nvm/versions/node/v7.4.0/bin/npm" "publish"
+38 error node v7.4.0
+39 error npm  v4.0.5
+40 error code ENEEDAUTH
+41 error need auth auth required for publishing
+42 error need auth You need to authorize this machine using `npm adduser`
+43 verbose exit [ 1, true ]
